@@ -1,0 +1,247 @@
+@import url(./font.css);
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+* {
+  font-family: "vazir";
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lalezar";
+}
+nav .nav-link {
+  font-weight: 800;
+}
+header .btn,
+.hero .btn {
+  font-size: 1.3rem;
+}
+.hero {
+  background-image: url(../images/hero-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 30, 16, 0.795);
+  position: absolute;
+  z-index: -1;
+}
+.firstSection {
+  margin-bottom: 5rem;
+}
+.firstSection .card {
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  transition: all 0.35s ease;
+  box-shadow: 0px 0px 10px rgb(194, 194, 194);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.firstSection .card::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.35s ease;
+}
+.firstSection .card:hover::after {
+  height: 100%;
+}
+.card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 23px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: orange;
+}
+.card:hover .icon {
+  background-color: white;
+  color: orange;
+}
+.firstSection .card:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+  color: white;
+}
+.col-img {
+  background-image: url(../images/chiken.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 23px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: orange;
+}
+.imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.imgBoxTitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 30, 16, 0.795);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.imgBox img {
+  transition: all 0.4s ease;
+}
+.imgBox:hover .imgBoxTitle {
+  opacity: 1;
+}
+.imgGallery {
+  height: 400px;
+}
+.imgBox:hover .imgGallery {
+  transform: scale(1.1);
+}
+.cardCont {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+.cardCont:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+#price i {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+}
+
+#price ul li {
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+}
+#price ul {
+  padding-right: 0;
+}
+.memberCard {
+  box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  text-align: center;
+}
+.memberCard img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+.socialIcon {
+  display: flex;
+  justify-content: center;
+}
+.socialIcon a {
+  margin-left: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s ease;
+}
+
+.socialIcon a:hover {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+.blogCard {
+  box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  border-radius: 0;
+  transition: all 0.4s ease;
+}
+.blogCard:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.blogCard img {
+  border-radius: 0;
+}
+form input.form-control {
+  height: 56px;
+}
+form .form-control {
+  border: transparent;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.027);
+}
+.footerTop{
+  background-color: rgb(0, 8, 19);
+  padding: 90px;
+  padding-bottom: 90px;
+}
+footer ul{
+  margin-top: 50px;
+  list-style: none;
+  padding: 0;
+}
+footer ul a{
+  color: rgb(145, 145, 145);
+  font-size: 1.2rem;
+  
+}
+footer ul a:hover{
+  color: white;
+}
+.footerButton{
+  color: blanchedalmond;
+  padding: 11px;
+  background-color: rgb(25, 28, 41);
+}
